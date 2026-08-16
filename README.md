@@ -13,3 +13,4 @@
 - 🔑 **Random Password Generator** — Generates strong random passwords
 - 🛡️ **Password Security Checker** — Checks password strength and safety
 - 🔒 **Caesar Cipher** — Basic text encryption and decryption tool
+- 💫 **Password Attempts Tracker** — Basic Password Attempts Tracker 
