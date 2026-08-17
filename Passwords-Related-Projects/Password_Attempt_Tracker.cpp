@@ -16,15 +16,17 @@ private:
 public:
     Tracker()
     {
-        cout << "=*=*=* Password Attempt Tracker =*=*=*" << endl;
+        cout<<"============================"<<endl;
+        cout<< " Password Attempt Tracker" << endl;
+        cout<<"============================"<<endl;
     }
     void Password()
     {
         while (attempts < max_attempts)
         {
             cout << endl;
-            cout << "***** Enter Your Password : *****" << endl;
-            cout << "Password : ";
+            cout<<"Username : Hadi"<<endl;
+            cout<<"Password : ";
             cin >> input;
             if (input == password)
             {
@@ -34,18 +36,26 @@ public:
             else
             {
                 attempts++;
-                cout << "===== You Are Entering Wrong Password You Have Remaining only : " << (max_attempts - attempts) << " Attempts ===== " << endl;
+                cout<<endl;
+                cout<<"===== Authenticating ..........."<<endl;
+                cout <<"You Are Entering Wrong Password You Have Remaining only : " << (max_attempts - attempts) << " Attempts ===== " << endl;
             }
         }
         if (logged_in)
         {
             cout << endl;
-            cout << "========== Login Successful ==========" << endl;
+            cout<<"== Authenticating ..........."<<endl;
+            cout<<"==================="<<endl;
+            cout<<"  Login  Successful "<<endl;
+            cout<<" =>=>=> Welcome =>=>=> "<<endl;
+            cout<<"==================="<<endl; 
         }
         else
         {
             cout << endl;
-            cout << "You Have No Attempts <=><=> Your Account Is Locked <=><=>" << endl;
+            cout<<"======================="<<endl;
+            cout << "You Have No Attempts\nYour Account Is Locked ! " << endl;
+            cout<<"======================="<<endl;
         }
     }
 };
